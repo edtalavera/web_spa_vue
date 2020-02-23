@@ -1,15 +1,15 @@
 <template>
-  <div class="header">  
+  <div>  
     {{msg}} 
-     <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/restaurantes">Restaurantes</router-link></li>
-        <li><router-link :to="{name: 'restaurante-destacado', params: { id: 16 } }">Restaurante Destacado</router-link></li>
-        <li><router-link to="/contacto">Contacto</router-link></li>
+     <ul class="mt-5">
+        <li class="hover-underline-animation"><router-link to="/">Home</router-link></li>
+        <li class="hover-underline-animation"><router-link to="/restaurantes">Restaurantes</router-link></li>
+        <li class="hover-underline-animation"><router-link :to="{name: 'restaurante-destacado', params: { id: 16 } }">Restaurante Destacado</router-link></li>
+        <li class="hover-underline-animation"><router-link to="/contacto">Contacto</router-link></li>
+         <li class="hover-underline-animation"><router-link :to="{name: 'restaurante-nuevo'}">Agregar Restaurante</router-link></li>
      </ul>
+     <hr>
   </div>
-  
-
 </template>
 
 <script>
@@ -33,9 +33,11 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
+   padding-bottom: .5rem;
 }
 a {
   color: #42b983;
   margin: 1rem;
+  text-decoration: none!important;
 }
 </style>

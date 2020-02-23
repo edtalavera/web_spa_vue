@@ -1,8 +1,10 @@
 <template>
-  <div id="app">
-      <img alt="Vue logo" src="./assets/logo.png">
-      <Header msg="My App"/>
-      <router-view></router-view>
+  <div id="app" class="container">
+      <img alt="Vue logo" src="./assets/logo.png" width="10%">
+      <Header msg="Restaurantes App"/>
+      <div class="container">
+          <router-view></router-view>
+      </div>
   </div>
 </template>
 
@@ -16,7 +18,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
