@@ -1,26 +1,4 @@
 
-@import './modules/custom';
 @import "~bootstrap/scss/bootstrap";
-
-//Generate alert modifier classes
-@each $color, $valueBg in $theme-colors {
-  .bg-#{$color} {
-      @each $color, $valueBtn in $theme-colors{
-        .btn-outline-#{$color}:hover{
-          color: $valueBg;
-      } 
-    } 
-  }
-}
-
-
-.btn{
-  border-radius: 10rem;
-  width: 10rem;
-}
-
 @import './modules/animations';
 
-body{
-    
-}

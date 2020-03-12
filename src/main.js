@@ -7,6 +7,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'// importamos la libreria
 
 
+
+
 import Home from './components/Home.vue'
 import RestauranteTop from './components/RestauranteTop.vue'
 import RestauranteList from './components/RestauranteList.vue'
@@ -18,6 +20,8 @@ import RestauranteEdit from './components/RestauranteEdit'
 import App from './App.vue'
 
 Vue.use(VueRouter);// cargamos la libreria
+
+
 
 const routes = [
       {path: '/contacto', component: Contacto},
